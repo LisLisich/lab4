@@ -64,7 +64,7 @@ namespace Lab4Git
             Controls.AddRange(new Control[] { greeting, back });
             var color = new Button
             {
-                Text = "Сменить цвет",
+                Text = "Изменить фон",
                 Location = new Point(190, 150),
                 Size = new Size(200, 40),
             };
