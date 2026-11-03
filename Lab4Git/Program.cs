@@ -62,6 +62,17 @@ namespace Lab4Git
             var back = new Button { Text = "Назад", Location = new Point(30, 150), Size = new Size(130, 40) };
             back.Click += (sender, e) => Close();
             Controls.AddRange(new Control[] { greeting, back });
+            var color = new Button
+            {
+                Text = "Изменить фон",
+                Location = new Point(190, 150),
+                Size = new Size(200, 40),
+            };
+            color.Click += (sender, e) =>
+            {
+                BackColor = BackColor == Color.LightBlue ? SystemColors.Control : Color.LightBlue;
+            };
+            Controls.Add(color);
         }
     }
 }
